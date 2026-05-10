@@ -154,7 +154,7 @@ import { WORD_CATEGORIES, WordCategory } from './db/words.config';
   `]
 })
 export class App implements OnInit {
-  readonly alphabet = 'ABCDEFGHILMNOPQRSTUVWXYZJKW'.split('').sort();
+  readonly alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').sort();
 
   categories: WordCategory[] = WORD_CATEGORIES;
 

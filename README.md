@@ -2,7 +2,7 @@
 
 Un'applicazione web vibrante e interattiva progettata per aiutare i bambini (5-10 anni) ad arricchire il proprio vocabolario italiano attraverso il classico gioco dell'impiccato.
 
-![Screenshot del gioco](https://github.com/user-attachments/assets/b846d2c4-1e7a-4243-8612-4fd1883d3265)
+![Screenshot del gioco](https://github.com/user-attachments/assets/2d7598c1-ae49-4bca-8f09-a161ebd23c3f)
 
 ## ✨ Caratteristiche principali
 
