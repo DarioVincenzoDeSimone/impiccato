@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "vitest",
     "serve": "ng serve --port 3000",
-    "dev": "ng serve --port 3000"
+    "dev": "ng serve --port 3000",
+    "deploy": "ng build --base-href \"https://DarioVincenzoDeSimone.github.io/impiccato/\" && npx angular-cli-ghpages --dir=dist/app/browser"
   },
   "private": true,
   "dependencies": {

@@ -1,69 +1,38 @@
-# 🎮 Gioco dell'Impiccato per Bambini
+# 🎮 L'Impiccato: Impara Giocando!
 
-Un divertente e colorato gioco dell'Impiccato progettato specificamente per bambini dai 5 ai 10 anni. Impara nuove parole giocando con una grafica accattivante e animazioni simpatiche!
+Un'applicazione web vibrante e interattiva progettata per aiutare i bambini (5-10 anni) ad arricchire il proprio vocabolario italiano attraverso il classico gioco dell'impiccato.
 
-![Screenshot del gioco](https://raw.githubusercontent.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6)
+![Screenshot del gioco](https://github.com/user-attachments/assets/b846d2c4-1e7a-4243-8612-4fd1883d3265)
 
-## ✨ Caratteristiche
+## ✨ Caratteristiche principali
 
-- **Vocabolario Curato**: Centinaia di parole comuni divise in categorie (Animali, Frutta, Scuola, Colori, ecc.) adatte alla fascia d'età.
-- **Design Full-Screen**: Ottimizzato per occupare l'intera viewport senza fastidiosi scroll, ideale per tablet e mobile.
-- **Layout Adattivo**: Le parole lunghe si rimpiccioliscono automaticamente per entrare sempre nello schermo.
-- **Grafica Premium**: Colori vivaci, icone Material Design e un'interfaccia "morbida" e giocosa.
-- **Zoneless Angular**: Utilizza le ultime tecnologie Angular per prestazioni al top.
+- **Esperienza Mobile-First**: Layout a tutto schermo ottimizzato per tablet e smartphone, senza barre di scorrimento.
+- **Design Dinamico**: Interfaccia colorata con animazioni fluide e feedback visivi immediati.
+- **Auto-Scaling delle Parole**: Algoritmo intelligente che adatta le dimensioni del testo e dei riquadri per far entrare sempre la parola nello schermo.
+- **Contenuti Curati**: Database di parole categorizzate (Animali, Natura, Scuola, ecc.) specificamente selezionate per l'apprendimento infantile.
+- **Performance Elevate**: Sviluppato con le ultime tecnologie per garantire un'esperienza utente istantanea e senza lag.
 
-## 🚀 Come avviare il progetto in locale
+## 🛠️ Stack Tecnologico
 
-1. **Clona il repository**:
-   ```bash
-   git clone https://github.com/tuo-utente/impiccato.git
-   cd impiccato
-   ```
+- **Core**: [Angular 19+](https://angular.dev/) con Signal-based State Management.
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/) per un design moderno e reattivo.
+- **Tipografia**: Google Fonts (Outfit) per la massima leggibilità.
+- **Iconografia**: Material Icons per un linguaggio visivo intuitivo.
 
-2. **Installa le dipendenze**:
+## 🚀 Sviluppo Locale
+
+Se desideri esplorare il codice o avviare il progetto localmente:
+
+1. **Installa le dipendenze**:
    ```bash
    npm install
    ```
 
-3. **Avvia il server di sviluppo**:
+2. **Avvia in modalità sviluppo**:
    ```bash
    npm run dev
    ```
-   L'app sarà disponibile all'indirizzo `http://localhost:4200`.
+   L'applicazione sarà disponibile su `http://localhost:3000`.
 
-## 📦 Build e Deployment
-
-### Compilazione per la produzione
-Per generare i file pronti per il deployment:
-```bash
-npm run build
-```
-I file verranno creati nella cartella `dist/app/browser`.
-
-### Hosting su GitHub Pages
-Sì, il progetto può funzionare perfettamente su **GitHub Pages**! 
-
-Ho già configurato `angular.json` con `outputMode: "static"` per rendere la build compatibile. Segui questi passaggi per il deploy:
-
-1. **Genera la build** (sostituisci l'URL se necessario):
-   ```bash
-   npx ng build --base-href "https://DarioVincenzoDeSimone.github.io/impiccato/"
-   ```
-
-2. **Esegui il deploy**:
-   ```bash
-   npx angular-cli-ghpages --dir=dist/app/browser
-   ```
-
-3. **Attiva le Pages**:
-   Vai su GitHub in `Settings > Pages` e assicurati che il branch `gh-pages` sia selezionato come sorgente.
-
-> [!TIP]
-> Il sito sarà raggiungibile all'indirizzo: `https://DarioVincenzoDeSimone.github.io/impiccato/`
-
-## 🛠️ Tecnologie utilizzate
-
-- **Angular 19+** (Standalone Components, Signals)
-- **Tailwind CSS 4** (per lo stile e il layout)
-- **Google Fonts** (Outfit/Inter per la leggibilità)
-- **Material Icons** (per il feedback visivo)
+---
+*Progetto realizzato come dimostrazione di sviluppo web moderno con Angular e Tailwind CSS.*
