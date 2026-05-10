@@ -43,16 +43,23 @@ I file verranno creati nella cartella `dist/app/browser`.
 ### Hosting su GitHub Pages
 Sì, il progetto può funzionare perfettamente su **GitHub Pages**! 
 
-Poiché GitHub Pages è un servizio di hosting statico, non supporta l'SSR (Server-Side Rendering) dinamico. Tuttavia, essendo questo un gioco basato su logica client-side, puoi fare il deploy della versione "browser" statica:
+Ho già configurato `angular.json` con `outputMode: "static"` per rendere la build compatibile. Segui questi passaggi per il deploy:
 
-1. Esegui la build specificando la `base-href` (necessaria se l'URL non è un dominio personalizzato):
+1. **Genera la build** (sostituisci l'URL se necessario):
    ```bash
-   npx ng build --base-href /nome-tuo-repo/
+   npx ng build --base-href "https://DarioVincenzoDeSimone.github.io/impiccato/"
    ```
-2. Carica il contenuto di `dist/app/browser` sul branch `gh-pages` o nella cartella `docs`.
+
+2. **Esegui il deploy**:
+   ```bash
+   npx angular-cli-ghpages --dir=dist/app/browser
+   ```
+
+3. **Attiva le Pages**:
+   Vai su GitHub in `Settings > Pages` e assicurati che il branch `gh-pages` sia selezionato come sorgente.
 
 > [!TIP]
-> Se desideri automatizzare il processo, ti consiglio di usare l'azione GitHub `angular-cli-ghpages`.
+> Il sito sarà raggiungibile all'indirizzo: `https://DarioVincenzoDeSimone.github.io/impiccato/`
 
 ## 🛠️ Tecnologie utilizzate
 

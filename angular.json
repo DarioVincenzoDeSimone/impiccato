@@ -30,6 +30,9 @@
             "index": "src/index.html",
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
+            "outputMode": "static",
+            "ssr": false,
+            "prerender": true,
             "assets": [
               {
                 "glob": "**/*",
