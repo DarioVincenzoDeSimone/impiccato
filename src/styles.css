@@ -6,8 +6,81 @@
     margin: 0;
     padding: 0;
   }
-  
+
   body {
     @apply antialiased text-slate-900;
   }
+}
+
+/* ─── Cross-app utilities ──────────────────────────────────────── */
+@layer components {
+
+  /* Shared button base */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 1rem;
+    font-weight: 900;
+    font-size: 1.25rem;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.1s, background 0.15s;
+  }
+
+  .btn:active:not(:disabled) {
+    transform: translateY(2px);
+    box-shadow: none !important;
+  }
+
+  .btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .btn--full  { width: 100%; }
+  .btn--grow  { flex: 2; }
+
+  /* Colour variants */
+  .btn--orange {
+    background: #fb923c;
+    color: white;
+    box-shadow: 0 6px 0 #ea8c00;
+  }
+  .btn--orange:hover:not(:disabled) { background: #f97316; }
+
+  .btn--sky {
+    background: #0ea5e9;
+    color: white;
+    box-shadow: 0 6px 0 #0284c7;
+  }
+  .btn--sky:hover:not(:disabled) { background: #0284c7; }
+
+  .btn--yellow {
+    background: #facc15;
+    color: white;
+    box-shadow: 0 4px 0 #ca8a04;
+  }
+  .btn--yellow:hover:not(:disabled) { background: #eab308; }
+
+  .btn--green {
+    background: #22c55e;
+    color: white;
+    box-shadow: 0 4px 0 #16a34a;
+  }
+  .btn--green:hover:not(:disabled) { background: #16a34a; }
+
+  .btn--danger {
+    background: #fee2e2;
+    color: #dc2626;
+    border: 2px solid #fecaca;
+  }
+  .btn--danger:hover:not(:disabled) { background: #fecaca; }
+
+  /* Word tiles */
+  .word-tile--lg { @apply w-8 sm:w-10 h-12 sm:h-14 text-2xl sm:text-3xl; }
+  .word-tile--md { @apply w-6 sm:w-8  h-10 sm:h-12 text-xl  sm:text-2xl; }
+  .word-tile--sm { @apply w-5 sm:w-6  h-8  sm:h-10 text-lg  sm:text-xl;  }
 }
